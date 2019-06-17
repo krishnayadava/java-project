@@ -1,0 +1,11 @@
+import java.util.*;
+class Stack {
+	
+	public static void main(String[]args){
+		
+		Stack s = new Stack();
+		
+		s.push("A");
+	}
+
+}

@@ -1,0 +1,11 @@
+import java.util.*;
+class array_list {
+	
+	public static void main(String[]args){
+		
+		ArrayList l = new ArrayList();
+		System.out.println(l.size());
+		
+	}
+
+}

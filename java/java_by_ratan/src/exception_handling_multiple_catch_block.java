@@ -1,0 +1,5 @@
+
+class exception_handling_multiple_catch_block {
+	
+
+}

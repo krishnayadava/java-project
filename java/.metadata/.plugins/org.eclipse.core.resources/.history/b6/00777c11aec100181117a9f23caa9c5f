@@ -1,0 +1,18 @@
+
+import java.util.*;
+class array_list {
+	
+	public static void main(String[]args){
+		
+		ArrayList l = new ArrayList();
+		l.add("A");
+        l.add("B");
+       l.add(2, "C");
+       l.add("A");       //duplicates are allowed
+        l.add("hello");
+     l.set(5, "krishna");
+		System.out.println(l.size());
+		
+	}
+
+}

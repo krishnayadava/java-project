@@ -1,0 +1,22 @@
+
+class parents {
+	
+	void m1(){
+		System.out.println("parent method executed");
+		}
+
+overriding_reference_variable_creation_process extends parent{
+	
+    void m(){
+		System.out.println("child method executed");
+	}
+public static void main(String[] args){
+	
+	parent p = new overriding_reference_variable_creation_process();
+	       p.m();
+}
+
+}
+
+
+

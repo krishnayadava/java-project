@@ -1,0 +1,68 @@
+package com.org;
+import java.util.List;
+import java.util.concurrent.TimeUnit;
+
+import org.openqa.selenium.Keys;
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.support.ui.Select;
+
+public class CalenderSelectTest {
+	
+	public static void main(String[]args) throws InterruptedException{
+		
+		System.setProperty("webdriver.chrome.driver","C:\\Users\\krishna.yadav\\Desktop\\New folder\\new\\chromedriver.exe");		
+		
+		  WebDriver  w= new ChromeDriver();
+		
+		w.get("https://www.freecrm.com/index.cfm?CFID=1860905&CFTOKEN=52318521&jsessionid=9c302feec93957d0a2541d47493130605d73");
+		
+		w.manage().window().maximize();
+		w.findElement(By.name("username")).sendKeys("temp123");
+		
+		w.findElement(By.name("password")).sendKeys("temp@123");
+		
+		w.manage().timeouts().implicitlyWait(60, TimeUnit.SECONDS);
+		
+		w.findElement(By.xpath("//input[@type='submit']")).click();
+		
+	    w.switchTo().frame("mainpanel");
+		
+	 new Select(w.findElement(By.name("slctMonth"))).selectByVisibleText("March");
+	 
+	 new Select(w.findElement(By.name("slctYear"))).selectByVisibleText("2019");
+	 
+	 Thread.sleep(2000);
+	 
+	
+	
+	 
+	 //input date wala case if user has given any input
+	String date="18-7-2019";	
+	String date1[]= date.split("-");
+	String day= date1[0];
+	String month= date1[1];
+	String year= date1[2];
+	
+	
+	w.findElement(By.className("crmcalendar")).click();
+	
+	
+	List<WebElement> allDates=w.findElements(By.xpath("//div[@id='crmcalendar']//td"));
+	
+	int total_date=allDates.size();
+	
+	for (int i=0; i<total_date; i++){
+		
+		String s=allDates.get(i).getText();
+		
+		System.out.println(s);
+	}
+	
+
+}
+	
+}
+	

@@ -1,0 +1,19 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+  
+<suite name="TestNG session Test automation Suite1" verbose="1" >
+  <test name="Different testNG features test" >
+    <classes>
+       <class name="com.com.org.ExceptionTimeOutTest" />
+       <class name="com.com.org.GoogleLinkTest" />
+       <class name="com.com.org.InvocationcountTest" />
+       <class name="com.com.org.MyApplication" />
+       <class name="com.com.org.studio" />
+           <class name="com.com.org.tedt" />
+       <class name="com.com.org.Testng" />
+           <class name="com.com.org.TestngBasics" />
+               <class name="com.com.org.TestngBasics2" />
+               <class name="com.com.org.TestNgfeatures" />
+    </classes>
+ 
+  </test>
+</suite>

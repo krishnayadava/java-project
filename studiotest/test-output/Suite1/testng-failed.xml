@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Suite1]">
+  <test name="Nopackage(failed)">
+    <classes>
+      <class name="com.onmobileqa.studio.testcases.LoginPageTest">
+        <methods>
+          <include name="loginTest"/>
+          <include name="setup"/>
+        </methods>
+      </class> <!-- com.onmobileqa.studio.testcases.LoginPageTest -->
+      <class name="com.onmobileqa.studio.testcases.HomePageTest">
+        <methods>
+          <include name="verifycontactslink"/>
+          <include name="setup"/>
+          <include name="teardown"/>
+        </methods>
+      </class> <!-- com.onmobileqa.studio.testcases.HomePageTest -->
+    </classes>
+  </test> <!-- Nopackage(failed) -->
+</suite> <!-- Failed suite [Suite1] -->

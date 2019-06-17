@@ -1,0 +1,77 @@
+package com.org;
+
+import java.util.ArrayList;
+import java.util.Iterator;
+import java.util.Set;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.support.ui.Select;
+
+class Controls_in_selenium {
+	
+	public static void main(String[]args){
+		
+		System.setProperty("webdriver.chrome.driver","C:\\Users\\krishna.yadav\\Desktop\\New folder\\new\\chromedriver.exe");		
+		
+		  WebDriver  w= new ChromeDriver();
+		
+		w.get("http://softwaretesting-guru.blogspot.com/p/blog-page.html");
+		
+		//first:1---->Handle selenium practice page
+		
+		w.findElement(By.linkText("Selenium Practice page")).click();
+		
+		
+		//Second:2--->Handle textbox using selenium webdriver
+		
+		w.findElement(By.name("Name")).sendKeys("i am too simple to understand");
+		String s=w.findElement(By.name("Name")).getText();
+		System.out.println(s);
+		
+		//Third:3--->Handle checkbox 
+		w.findElement(By.name("subscribe")).click();
+		
+		//fourth:4--->handle text area
+		w.findElement(By.name("comments")).sendKeys("heeyyy this is krishna here");
+		
+		
+		
+		//fifth:5--->handle drop down   //this is defined in select class so we need to create aboject of select
+	     new Select(w.findElement(By.name("countries"))).selectByVisibleText("Aruba");
+	  
+	     //Constructor k andar web element daal k execute kara denge
+	     
+	     //sixth:6--->handle radio buttom
+	     w.findElement( By.xpath("//input[@value='bad']")).click();
+	     
+	     Set<String> windowsId = w.getWindowHandles();
+
+
+	       ArrayList<String> ids = new ArrayList<String>();
+	     
+	      
+	       Iterator<String>  itr= windowsId.iterator();
+
+
+	       while(itr.hasNext()){
+
+	             ids.add(itr.next());
+	     
+	     
+	     
+	       }
+	       w.switchTo().window(ids.get(3));
+	       System.out.println(ids);
+	     
+	     
+	     
+		  
+		
+		
+		
+	}
+
+}

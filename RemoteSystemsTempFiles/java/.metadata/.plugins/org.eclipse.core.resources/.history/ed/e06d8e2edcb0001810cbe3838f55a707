@@ -1,0 +1,18 @@
+
+class static_variable {
+	
+	static int a =10;
+	static int b=20;
+	
+	public static void main(String[]args){
+		
+		System.out.println(a);
+		System.out.println(b);
+		static_variable s= new static_variable();
+		s.m1();
+	}
+	void m1(){
+		System.out.println(a);
+	}
+
+}

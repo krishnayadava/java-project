@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [TestNG session Test automation Suite1]">
+  <test thread-count="5" name="Different testNG features test(failed)">
+    <classes>
+      <class name="com.com.org.studio">
+        <methods>
+          <include name="login"/>
+        </methods>
+      </class> <!-- com.com.org.studio -->
+      <class name="com.com.org.ExceptionTimeOutTest">
+        <methods>
+          <include name="infiniteLoop"/>
+        </methods>
+      </class> <!-- com.com.org.ExceptionTimeOutTest -->
+      <class name="com.com.org.GoogleLinkTest">
+        <methods>
+          <include name="loginPage"/>
+          <include name="setup"/>
+          <include name="Urlget"/>
+          <include name="lounchbrowser"/>
+        </methods>
+      </class> <!-- com.com.org.GoogleLinkTest -->
+      <class name="com.com.org.tedt">
+        <methods>
+          <include name="login"/>
+        </methods>
+      </class> <!-- com.com.org.tedt -->
+    </classes>
+  </test> <!-- Different testNG features test(failed) -->
+</suite> <!-- Failed suite [TestNG session Test automation Suite1] -->

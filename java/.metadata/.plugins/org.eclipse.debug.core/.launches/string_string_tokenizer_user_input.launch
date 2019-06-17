@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<launchConfiguration type="org.eclipse.jdt.launching.localJavaApplication">
+<listAttribute key="org.eclipse.debug.core.MAPPED_RESOURCE_PATHS">
+<listEntry value="/string_input_for_string_tokenizer/src/string_input_for_string_tokenizer.java"/>
+</listAttribute>
+<listAttribute key="org.eclipse.debug.core.MAPPED_RESOURCE_TYPES">
+<listEntry value="1"/>
+</listAttribute>
+<stringAttribute key="org.eclipse.jdt.launching.MAIN_TYPE" value="string_string_tokenizer_user_input"/>
+<stringAttribute key="org.eclipse.jdt.launching.PROJECT_ATTR" value="string_input_for_string_tokenizer"/>
+</launchConfiguration>

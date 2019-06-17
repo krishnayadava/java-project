@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [SeleniumProject by packages]">
+  <test thread-count="5" name="AssertionDemo(failed)">
+    <classes>
+      <class name="AssertionDemo.AssertionScripts">
+        <methods>
+          <include name="test1"/>
+          <include name="test12"/>
+          <include name="test15"/>
+        </methods>
+      </class> <!-- AssertionDemo.AssertionScripts -->
+    </classes>
+  </test> <!-- AssertionDemo(failed) -->
+</suite> <!-- Failed suite [SeleniumProject by packages] -->

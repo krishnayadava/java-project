@@ -1,0 +1,11 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+  
+<suite name="Suite1" verbose="1" >
+  <test name="Nopackage" >
+    <classes>
+       <class name="com.onmobileqa.studio.testcases.LoginPageTest" />
+        <class name="com.onmobileqa.studio.testcases.HomePageTest" />
+         <class name="com.onmobileqa.studio.testcases.ContactsPageTest" />
+    </classes>
+  </test>
+</suite>

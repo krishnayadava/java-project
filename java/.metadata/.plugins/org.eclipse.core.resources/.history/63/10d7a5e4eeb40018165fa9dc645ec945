@@ -1,0 +1,19 @@
+
+class paa {
+	
+	private void m(){  //private method lag gya to class k confined ho gya ye method
+		System.out.println("parent class executed");
+	}
+
+
+class overloading_private_method extends paa{
+}
+	public static void main(String[]args){
+		
+	overloading_private_method s=new overloading_private_method();
+	s.m();
+	
+		
+	}
+
+}

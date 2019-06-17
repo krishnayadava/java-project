@@ -1,0 +1,26 @@
+import java.util.Scanner;
+class array_selection_sort {
+
+	public static void main(String[]args){
+		
+		Scanner input = new Scanner(System.in);
+		int a[] = new int [5];
+		int i; int j; int k;
+		int min=a[k];
+		int loc=k;
+		
+		for (i=0; i<4; i++){
+			 a[i]= input.nextInt();
+			}
+		
+		for(j=0; j<4; j++){
+			
+			 if(a[i]<a[i+1]){
+				 min=i;
+				 loc=a[i];
+				 
+			 }
+		}
+		
+	}
+}

@@ -1,0 +1,23 @@
+
+import java.util.*;
+class Vector_list {
+	
+	public static void main(String[] args){
+		
+		Vector v = new Vector();
+	//	Vector v = new Vector(20);
+	//	Vector v = new Vector(1000 5);
+	//	Vector v = new Vector(Collection c);
+		
+	System.out.println(v.capacity()); //vector me he keval dekh payenge
+	
+	for(int i=0; i<=8; i++){
+		v.addElement(i);
+	}
+	System.out.println(v.capacity());
+	
+	
+		
+	}
+
+}

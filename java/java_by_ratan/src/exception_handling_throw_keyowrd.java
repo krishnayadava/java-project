@@ -1,0 +1,6 @@
+
+class exception_handling_throw_keyowrd {
+	 
+	
+
+}

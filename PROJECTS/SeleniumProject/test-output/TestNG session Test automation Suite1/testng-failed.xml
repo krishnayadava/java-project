@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [TestNG session Test automation Suite1]">
+  <test thread-count="5" name="Different testNG features test(failed)">
+    <parameter name="password" value="uralone123@*."/>
+    <parameter name="emailid" value="yadav11.k.m@gmail.com"/>
+    <parameter name="URL" value="https://www.facebook.com/"/>
+    <classes>
+      <class name="parameterTest.ParameterTest">
+        <methods>
+          <include name="setup" invocation-numbers="0"/>
+        </methods>
+      </class> <!-- parameterTest.ParameterTest -->
+    </classes>
+  </test> <!-- Different testNG features test(failed) -->
+</suite> <!-- Failed suite [TestNG session Test automation Suite1] -->
